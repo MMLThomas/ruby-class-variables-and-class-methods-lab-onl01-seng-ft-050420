@@ -20,7 +20,6 @@ class Song
   def self.genre_count
     genre_counts = {}
     @@genres.uniq.select{|g| genre_counts[g] = @@genres.count(g)}
-    genre_counts
   end
   
   def initialize(name, artist, genre)

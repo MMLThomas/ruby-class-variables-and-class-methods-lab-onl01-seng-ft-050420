@@ -20,7 +20,7 @@ class Song
   def self.genre_count
     genre_counts = {}
     @@genres.uniq.each{|g| genres_counts[g] = @@genre.count(g)}
-    genres_counts
+    genre_counts
   end
   
   def initialize(name, artist, genre)

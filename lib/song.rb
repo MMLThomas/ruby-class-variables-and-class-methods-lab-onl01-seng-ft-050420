@@ -19,7 +19,7 @@ class Song
   
   def self.genre_count
     genre_counts = {}
-    @@genres.uniq.map!{|g| genre_counts[g] = @@genres.count(g)}
+    @@genres.uniq.map{|g| genre_counts[g] = @@genres.count(g)}
   end
   
   def initialize(name, artist, genre)

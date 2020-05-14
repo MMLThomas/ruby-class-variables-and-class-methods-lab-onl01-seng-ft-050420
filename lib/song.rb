@@ -23,6 +23,12 @@ class Song
     genre_counts
   end
   
+  def self.artist_count
+    artist_counts = {}
+    @@artists.uniq.each{|g| artist_counts[g] = @@artist.count(g)}
+  end
+    
+  
   def initialize(name, artist, genre)
     @name = name
     @genre = genre

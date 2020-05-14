@@ -20,7 +20,7 @@ class Song
     genre_counts = {}
   end
   
-  def initialize(name, genre, artist)
+  def initialize(name, , genreartist)
     @name = name
     @genre = genre
     @artist = artist

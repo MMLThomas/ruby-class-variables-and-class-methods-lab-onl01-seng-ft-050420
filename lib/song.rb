@@ -19,7 +19,7 @@ class Song
   
   def self.genre_count
     genre_counts = {}
-    @@genres.uniq.select{|g| genres_counts[g] = @@genre.count(g)}
+    @@genres.uniq.select{|g| genre_counts[g] = @@genre.count(g)}
     genre_counts
   end
   
